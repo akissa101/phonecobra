@@ -3,7 +3,7 @@ import { Recursive } from 'next/font/google';
 import './globals.css';
 import { Navbar } from '@/components/navbar';
 import { Provider } from '@/components/providers';
-// import Footer from '@/components/footer';
+import Footer from '@/components/footer';
 
 const recursive = Recursive({
   subsets: ['latin'],
@@ -31,7 +31,7 @@ export default function RootLayout({
             {children}
           </main>
 
-          {/* <Footer /> */}
+          <Footer />
         </Provider>
       </body>
     </html>
